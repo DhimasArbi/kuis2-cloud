@@ -15,4 +15,12 @@
 
 #### Link web hasil deploy:
 
+> http://168.138.25.103:8090/
+
 #### Screenshot Hasil :
+
+![SS1](Screenshots\S2.png)
+![SS1](Screenshots\S1.png)
+![SS1](Screenshots\S3.png)
+![SS1](Screenshots\S4.png)
+![SS1](Screenshots\S5.png)
