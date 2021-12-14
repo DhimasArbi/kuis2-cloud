@@ -1,0 +1,37 @@
+version: "3"
+services:
+  #Laravel App
+  mahasiswa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dhimasarbi/mahasiswa
+    container_name: mahasiswa
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: mahasiswa
+      SERVICE_TAGS: mahasiswa
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - laravel-mahasiswa
+  #Nginx Service
+  nginx-mahasiswa:
+    image: nginx:alpine
+    container_name: nginx-mahasiswa
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./:/var/www/html
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - laravel-mahasiswa
+
+#Docker Networks
+networks:
+  laravel-mahasiswa:
+    driver: bridge
