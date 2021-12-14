@@ -19,8 +19,8 @@
 
 #### Screenshot Hasil :
 
-![SS1](Screenshots\S2.png)
-![SS1](Screenshots\S1.png)
-![SS1](Screenshots\S3.png)
-![SS1](Screenshots\S4.png)
-![SS1](Screenshots\S5.png)
+- ![SS1](Screenshots/S2.png)
+- ![SS1](Screenshots/S1.png)
+- ![SS1](Screenshots/S3.png)
+- ![SS1](Screenshots/S4.png)
+- ![SS1](Screenshots/S5.png)
